@@ -7,6 +7,7 @@ Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	d7da61dbb06ad5206bc65c599be938d4
 URL:		http://www.synce.org/
+Requires:	notification-daemon
 Requires:	python-dbus
 Requires:	python-pynotify
 ExcludeArch:	%{x8664} alpha ia64 ppc64 s390x sparc64
