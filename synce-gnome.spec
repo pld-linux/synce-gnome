@@ -10,17 +10,18 @@ URL:		http://www.synce.org/
 Requires:	notification-daemon
 Requires:	python-dbus
 Requires:	python-pynotify
-ExcludeArch:	%{x8664} alpha ia64 ppc64 s390x sparc64
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-- -
+...
 
 Note: Despite this being called synce-gnome, this is not
 Gnome-specific.
 
 %prep
 %setup -q
+%{__sed} -i -e '1s,^#!.*python,#!%{__python},' src/test.py
 
 %build
 
