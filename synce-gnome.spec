@@ -1,7 +1,7 @@
 Summary:	Gnome UI
 Name:		synce-gnome
 Version:	0.10.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
@@ -10,6 +10,7 @@ URL:		http://www.synce.org/
 BuildRequires:	sed >= 4.0
 Requires:	notification-daemon
 Requires:	python-dbus
+Requires:	python-pygtk-gtk
 Requires:	python-pynotify
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
