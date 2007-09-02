@@ -1,4 +1,5 @@
-Summary:	Gnome UI
+Summary:	GNOME UI
+Summary(pl.UTF-8):	Interfejs GNOME
 Name:		synce-gnome
 Version:	0.10.0
 Release:	2
@@ -16,10 +17,15 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Gnome UI.
+GNOME UI.
 
 Note: Despite this being called synce-gnome, this is not
-Gnome-specific.
+GNOME-specific.
+
+%description -l pl.UTF-8
+Interfejs GNOME.
+
+Uwaga: mimo nazwy synce-gnome, nie jest on specyficzny dla GNOME.
 
 %prep
 %setup -q
