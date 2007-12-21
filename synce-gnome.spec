@@ -2,7 +2,7 @@ Summary:	GNOME UI
 Summary(pl.UTF-8):	Interfejs GNOME
 Name:		synce-gnome
 Version:	0.10.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
