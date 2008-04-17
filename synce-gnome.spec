@@ -11,6 +11,7 @@ Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	e79f5d43fefe30b51edc8750fe451a2d
 URL:		http://www.synce.org/
 BuildRequires:	python
+BuildRequires:	python-setuptools
 Requires:	notification-daemon
 Requires:	python-dbus
 Requires:	python-pygtk-gtk
