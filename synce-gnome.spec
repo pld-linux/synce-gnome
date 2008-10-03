@@ -4,7 +4,7 @@ Summary:	GNOME Systray applet for inputing device password
 Summary(pl.UTF-8):	Interfejs GNOME
 Name:		synce-gnome
 Version:	0.11
-Release:	1
+Release:	2
 License:	MIT
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
