@@ -12,7 +12,7 @@ Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 URL:		http://www.synce.org/
 BuildRequires:	python
 BuildRequires:	python-setuptools
-Requires:	notification-daemon
+Requires:	dbus(org.freedesktop.Notifications)
 Requires:	python-dbus
 Requires:	python-pygtk-gtk
 Requires:	python-pynotify
