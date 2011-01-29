@@ -7,11 +7,13 @@ Version:	0.11
 Release:	5
 License:	MIT
 Group:		Applications/Communications
-Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	e79f5d43fefe30b51edc8750fe451a2d
 URL:		http://www.synce.org/
 BuildRequires:	python
+BuildRequires:	python-modules
 BuildRequires:	python-setuptools
+BuildRequires:	rpm-pythonprov
 Requires:	dbus(org.freedesktop.Notifications)
 Requires:	python-dbus
 Requires:	python-pygtk-gtk
@@ -20,8 +22,9 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-SynCE-GNOME displays nice libnotify messages when a device is connected or
-disconnected, and it prompts for a password if one is required.
+SynCE-GNOME displays nice libnotify messages when a device is
+connected or disconnected, and it prompts for a password if one is
+required.
 
 Note: Despite this being called synce-gnome, this is not
 GNOME-specific.
