@@ -1,7 +1,5 @@
-# TODO
-# - update pl
 Summary:	GNOME Systray applet for inputing device password
-Summary(pl.UTF-8):	Interfejs GNOME
+Summary(pl.UTF-8):	Aplet tacki systemowej GNOME do wprowadzania haseł urządzeń
 Name:		synce-gnome
 Version:	0.11
 Release:	5
@@ -30,19 +28,21 @@ Note: Despite this being called synce-gnome, this is not
 GNOME-specific.
 
 %description -l pl.UTF-8
-Interfejs GNOME.
+SynCE-GNOME wyświetla ładne komunikaty libnotify przy podłączaniu lub
+odłączaniu urządzenia oraz pyta o hasło, kiedy jest wymagane.
 
-Uwaga: mimo nazwy synce-gnome, nie jest on specyficzny dla GNOME.
+Uwaga: mimo nazwy synce-gnome, aplet nie jest on specyficzny dla
+GNOME.
 
 %prep
 %setup -q
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install \
+%{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT
 
 %clean
